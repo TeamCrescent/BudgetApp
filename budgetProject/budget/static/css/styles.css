@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* General */
+html {
+  font-family: Montserrat;
+  background-color: #E0E0E0;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* project list (No Projects) */
+.noproject-wrapper {
+  margin-top:250px;
+  padding: 18px 0px;
+  border: 6px dashed #9e9e9e;
+}
+.noproject-wrapper h3 {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.btn-large {
+    margin-bottom: 30px;
+}
+
+/* project detail statistics */
+.section-stats .card-panel {
+  
+}
