@@ -25,5 +25,16 @@ html {
 
 /* project detail statistics */
 .section-stats .card-panel {
-  
+     margin: 8px;
+}
+
+.section-stats h3 {
+    font-size: 2.5vw;
+    margin: 15px 0px;
+}
+
+@media(max-width: 992px){
+    .section-stats h3 {
+        font-size: calc(16px + 6vw);
+    }
 }
