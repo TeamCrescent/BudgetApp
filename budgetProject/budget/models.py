@@ -1,6 +1,10 @@
 from django.db import models
 from django.utils.text import slugify
+<<<<<<< HEAD
 # Create your models here.
+=======
+# Create your models here
+>>>>>>> 9475caae54463693af926bb53dd8c6c155ab395c
 
 
 class Project(models.Model):
@@ -19,8 +23,12 @@ class Category(models.Model):
 
 
 class Expense(models.Model):
+<<<<<<< HEAD
     project = models.ForeignKey(Project, on_delete=models.CASCADE,
                                 related_name='expenses')
+=======
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+>>>>>>> 9475caae54463693af926bb53dd8c6c155ab395c
     title = models.CharField(max_length=100)
     amount = models.DecimalField(max_digits=8, decimal_places=2)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
