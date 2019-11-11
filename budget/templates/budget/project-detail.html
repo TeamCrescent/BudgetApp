@@ -1,4 +1,4 @@
-{% extends 'budget/base.html' %}
+  {% extends 'budget/base.html' %}
 
 {% block content %}
 
@@ -73,6 +73,29 @@
 
   </section>
 
+</div>
+
+<div id="expenseModal">
+  <div class="modal-content">
+    <h4>Add Expense</h4>
+
+    <form method="POST">
+      {% csrf_token %}
+      <label for="title">Title</label>
+      <input name="title" id="title">
+
+      <label for="amount">Amount</label>
+      <input name="amount" id="amount">
+
+      <select name="category">
+        {% for category in category_list %}
+          <option>{{ category.name }}</option>
+        {% endfor %}
+      </select>
+
+      <button type="submit" class="btn">Add</button>
+    </form>
+  </div>
 </div>
 
 {% endblock %}
